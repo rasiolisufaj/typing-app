@@ -1,0 +1,27 @@
+Typing app
+1.generate a word 
+2. Users types the word
+3. If he types all the letters correct repeat from step 1 + increment correctWordCount
+
+
+
+[presentation,software,success,proposal,piano, power,feature,deposit,weed,drift,law,current,digital,regret,trustee,ideal,football,boat,art,skin]
+-> generate a new word 
+    generate a random number from 0 to array length
+    return array[randomIndex];
+
+-> create an array containing 20 words.
+-> get a random word from the array
+-> h1 will display the random word, 
+-> we will have 1 input, input 1 will contain the user word;
+-> we will add a listener on keyup at the input 1
+    get user word
+    if userword === { randomword (h1.innertext)
+      generate a new word.
+    }
+
+HTML
+h1 to display the random word
+h1 to display the correctWordCount
+
+input to get the userWord
