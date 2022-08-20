@@ -51,6 +51,7 @@ userWordElement.addEventListener("keyup", (e) => {
     });
     if (words.length === 0) {
       userWordElement.disabled = true;
+      userWordElement.classList.add("finished");
       displayRandomWord("Finished");
       displayCount(count);
     } else {
