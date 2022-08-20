@@ -2,7 +2,7 @@ const correctWordCountElement = document.querySelector("#correctWordCount");
 const randomWordElement = document.querySelector("#randomWord");
 const userWordElement = document.querySelector("#userWord");
 let count = 0;
-const words = [
+let words = [
   "presentation",
   "software",
   "success",
@@ -46,9 +46,18 @@ userWordElement.addEventListener("keyup", (e) => {
   const userWord = userWordElement.value;
   if (userWord === generatedWord) {
     count++;
-    generatedWord = generateWord();
-    displayRandomWord(generatedWord);
-    displayCount(count);
-    userWordElement.value = "";
+    words = words.filter((word) => {
+      return word !== generatedWord;
+    });
+    if (words.length === 0) {
+      userWordElement.disabled = true;
+      displayRandomWord("Finished");
+      displayCount(count);
+    } else {
+      generatedWord = generateWord();
+      displayRandomWord(generatedWord);
+      displayCount(count);
+      userWordElement.value = "";
+    }
   }
 });
