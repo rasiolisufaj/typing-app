@@ -25,3 +25,20 @@ h1 to display the random word
 h1 to display the correctWordCount
 
 input to get the userWord
+
+________________________________________________________________
+
+Starting the timer:
+  1. on the first keyup
+      let isGameStarting = true;
+      .onKeyUP->input
+        if(isGameStarting){
+          startTimer();
+          isGameStarting = false;
+        }
+Displaing the time
+      brenda funxionit startTimer()
+      WARNING: let timeDisplayInterval; deklarohet global 
+
+Ending timer
+    timeDisplayInterval.clear();

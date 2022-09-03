@@ -7,6 +7,7 @@ body {
 .container {
   max-width: 400px;
 }
+
 input[type="text"],
 input[type="text"]:focus {
   border: none;
@@ -16,4 +17,21 @@ input[type="text"]:focus {
 }
 .finished {
   display: none;
+}
+
+.time {
+  text-align: center;
+  color: #fff;
+}
+
+.btn {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  opacity: 0.6;
 }
