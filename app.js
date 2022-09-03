@@ -100,7 +100,7 @@ userWordElement.addEventListener("keyup", (e) => {
     startTimer();
     isGameStarting = false;
   }
-  const userWord = userWordElement.value;
+  const userWord = userWordElement.value.toLowerCase();
   if (userWord === generatedWord) {
     count++;
     words = words.filter((word) => {
