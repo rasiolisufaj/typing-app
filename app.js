@@ -47,7 +47,12 @@ function calculateAndDisplayTime() {
   }
   if (milliseconds > 99) {
     seconds++;
-    secondsElement.innerText = "0" + seconds;
+    if (seconds <= 59) {
+      secondsElement.innerText = "0" + seconds;
+    }
+    if (seconds > 59) {
+      secondsElement.innerText = "00";
+    }
     milliseconds = 0;
   }
   if (seconds > 9 && seconds < 60) {
